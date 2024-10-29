@@ -1,0 +1,14 @@
+C:\Users\G43560\Desktop\Pastas\PROJETO\PokemonProjection\bin\Debug\net8.0\PokemonProjection.exe
+C:\Users\G43560\Desktop\Pastas\PROJETO\PokemonProjection\bin\Debug\net8.0\PokemonProjection.deps.json
+C:\Users\G43560\Desktop\Pastas\PROJETO\PokemonProjection\bin\Debug\net8.0\PokemonProjection.runtimeconfig.json
+C:\Users\G43560\Desktop\Pastas\PROJETO\PokemonProjection\bin\Debug\net8.0\PokemonProjection.dll
+C:\Users\G43560\Desktop\Pastas\PROJETO\PokemonProjection\bin\Debug\net8.0\PokemonProjection.pdb
+C:\Users\G43560\Desktop\Pastas\PROJETO\PokemonProjection\obj\Debug\net8.0\PokemonProjection.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\G43560\Desktop\Pastas\PROJETO\PokemonProjection\obj\Debug\net8.0\PokemonProjection.AssemblyInfoInputs.cache
+C:\Users\G43560\Desktop\Pastas\PROJETO\PokemonProjection\obj\Debug\net8.0\PokemonProjection.AssemblyInfo.cs
+C:\Users\G43560\Desktop\Pastas\PROJETO\PokemonProjection\obj\Debug\net8.0\PokemonProjection.csproj.CoreCompileInputs.cache
+C:\Users\G43560\Desktop\Pastas\PROJETO\PokemonProjection\obj\Debug\net8.0\PokemonProjection.dll
+C:\Users\G43560\Desktop\Pastas\PROJETO\PokemonProjection\obj\Debug\net8.0\refint\PokemonProjection.dll
+C:\Users\G43560\Desktop\Pastas\PROJETO\PokemonProjection\obj\Debug\net8.0\PokemonProjection.pdb
+C:\Users\G43560\Desktop\Pastas\PROJETO\PokemonProjection\obj\Debug\net8.0\PokemonProjection.genruntimeconfig.cache
+C:\Users\G43560\Desktop\Pastas\PROJETO\PokemonProjection\obj\Debug\net8.0\ref\PokemonProjection.dll
