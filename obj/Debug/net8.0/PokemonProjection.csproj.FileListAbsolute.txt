@@ -12,3 +12,4 @@ C:\Users\G43560\Desktop\Pastas\PROJETO\PokemonProjection\obj\Debug\net8.0\refint
 C:\Users\G43560\Desktop\Pastas\PROJETO\PokemonProjection\obj\Debug\net8.0\PokemonProjection.pdb
 C:\Users\G43560\Desktop\Pastas\PROJETO\PokemonProjection\obj\Debug\net8.0\PokemonProjection.genruntimeconfig.cache
 C:\Users\G43560\Desktop\Pastas\PROJETO\PokemonProjection\obj\Debug\net8.0\ref\PokemonProjection.dll
+C:\Users\G43560\Desktop\Pastas\PROJETO\PokemonProjection\obj\Debug\net8.0\PokemonProjection.sourcelink.json

@@ -10,34 +10,43 @@ public class Program
 
     public static async Task Main(string[] args)
     {
-        string url = "https://pokeapi.co/api/v2/pokemon/pikachu"; // Replace with your API endpoint
-        try
+        while (true)
         {
-            // Send request and deserialize JSON response into the Pokemon model
-            Pokemon.Pokemon pokemon = await client.GetFromJsonAsync<Pokemon.Pokemon>(url);
+        bool nomeExiste = false;
+        do{
+            Console.Write("Digite o nome do seu pokemon: ");
+            string pokemonName = Console.ReadLine(); //the EndPoint
+            string url = "https://pokeapi.co/api/v2/pokemon/" + pokemonName;
 
-            // Output the result
-            Console.WriteLine($"ID: {pokemon.Id}");
-            Console.WriteLine($"Name: {pokemon.Name}");
-            foreach (TypeSlot typeSlot in pokemon.Types)
-            { //For para percorrer os tipos
-                Console.WriteLine($"Type Slot: {typeSlot.Slot}");
-                Console.WriteLine($"Type Name: {typeSlot.Type.Name}");
-                Console.WriteLine($"Type URL: {typeSlot.Type.Url}");
+            try
+            {
+                // Send request and deserialize JSON response into the Pokemon model
+                Pokemon.Pokemon pokemon = await client.GetFromJsonAsync<Pokemon.Pokemon>(url);
+
+                // Output the result
+                Console.WriteLine($"ID: {pokemon.Id}");
+                Console.WriteLine($"Name: {pokemon.Name}");
+                foreach(Abilities ability in pokemon.Abilities)
+                { //For para percorrer as habilidades
+                    Console.WriteLine($"Abilities Slot: {ability.Slot}");
+                    Console.WriteLine($"Ability Name: {ability.Ability.Name}");
+                    Console.WriteLine($"Ability URL: {ability.Ability.Url}");
+                    Console.WriteLine($"Is Hidden: {ability.IsHidden}");
+                }
+                Console.WriteLine($"Height: {pokemon.Height}");
+                Console.WriteLine($"Weight: {pokemon.Weight}");
+                nomeExiste = true;
             }
-            foreach(Abilities ability in pokemon.Abilities)
-            { //For para percorrer as habilidades
-                Console.WriteLine($"Abilities Slot: {ability.Slot}");
-                Console.WriteLine($"Ability Name: {ability.Ability.Name}");
-                Console.WriteLine($"Ability URL: {ability.Ability.Url}");
-                Console.WriteLine($"Is Hidden: {ability.IsHidden}");
+            catch (HttpRequestException e)
+            {
+                nomeExiste = false;
+                Console.WriteLine("Request error: " + e.Message);
+                Console.WriteLine("Nome Inexistente!");
             }
-            Console.WriteLine($"Height: {pokemon.Height}");
-            Console.WriteLine($"Weight: {pokemon.Weight}");
-        }
-        catch (HttpRequestException e)
-        {
-            Console.WriteLine("Request error: " + e.Message);
+        } while(!nomeExiste);
+    
         }
     }
 }
+
+
