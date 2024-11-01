@@ -1,0 +1,1 @@
+o model é util só se for pegar as infos do banco, pq ai faz um construtor e eh melhor pra pegar as informações
